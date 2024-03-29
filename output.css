@@ -770,49 +770,6 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-@keyframes jump-in{
-  0%{
-    transform: scale(0%);
-  }
-
-  80%{
-    transform: scale(120%);
-  }
-
-  100%{
-    transform: scale(100%);
-  }
-}
-
-.animate-jump-in{
-  animation: jump-in .5s both;
-}
-
-@keyframes wiggle{
-  0%, 100%{
-    transform: rotate(-3deg);
-  }
-
-  50%{
-    transform: rotate(3deg);
-  }
-}
-
-.animate-wiggle{
-  animation: wiggle 1s both;
-}
-
-@keyframes ping{
-  75%, 100%{
-    transform: scale(2);
-    opacity: 0;
-  }
-}
-
-.animate-ping{
-  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
-}
-
 @keyframes fade{
   0%{
     opacity: 0;
@@ -841,6 +798,24 @@ video {
 
 .animate-fade-left{
   animation: fade-left 1s both;
+}
+
+@keyframes jump-in{
+  0%{
+    transform: scale(0%);
+  }
+
+  80%{
+    transform: scale(120%);
+  }
+
+  100%{
+    transform: scale(100%);
+  }
+}
+
+.animate-jump-in{
+  animation: jump-in .5s both;
 }
 
 .grid-cols-1{
@@ -952,11 +927,6 @@ video {
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-slate-300{
-  --tw-bg-opacity: 1;
-  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
 }
 
 .px-1{
@@ -1120,16 +1090,8 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.animate-delay-300{
-  animation-delay: 300ms;
-}
-
 .animate-delay-1000{
   animation-delay: 1000ms;
-}
-
-.animate-duration-\[3000ms\]{
-  animation-duration: 3000ms;
 }
 
 .animate-duration-\[2000ms\]{
@@ -1151,32 +1113,14 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-@keyframes wiggle{
-  0%, 100%{
-    transform: rotate(-3deg);
-  }
-
-  50%{
-    transform: rotate(3deg);
-  }
-}
-
-.hover\:animate-wiggle:hover{
-  animation: wiggle 1s both;
-}
-
-.hover\:bg-blue-700:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-blue-500:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
-.hover\:to-blue-500:hover{
-  --tw-gradient-to: #3b82f6 var(--tw-gradient-to-position);
+.hover\:bg-blue-700:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 640px){
@@ -1500,6 +1444,11 @@ video {
 @media (min-width: 1280px){
   .xl\:mt-44{
     margin-top: 11rem;
+  }
+
+  .xl\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
   }
 }
 
